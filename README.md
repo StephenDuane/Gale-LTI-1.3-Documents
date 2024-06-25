@@ -21,7 +21,7 @@
             <div class="mt-3"></div>
         </div>
     </body>
-</html>
+</html >
 
 ## Image tags to use
-<img src="https://assets.gale.com/docs/technical/technical_doc_images/Directory/insertfilenamehere.png" aria-label="insert text the same as alt here" class="img-fluid" style="border: 2px solid black">
+<img src="https://assets.gale.com/docs/technical/technical_doc_images/Directory/insertfilenamehere.png" aria-label="insert text the same as alt here" class="img-fluid" style="border: 2px solid black" >
