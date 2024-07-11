@@ -1,18 +1,110 @@
 <html>
     <head>
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     </head>
 
     <body>
+        <main class="ml-3">
         <div class="d-grid">
-            <div class="mt-3"></div>
-            <div class="mt-3"></div>
-            <div class="mt-3"></div>
-            <div class="mt-3"></div>
-            <div class="mt-3"></div>
-            <div class="mt-3"></div>
-            <div class="mt-3"></div>
-            <div class="mt-3"></div>
+            <div class="mt-3">
+                <div class="mt-3">
+                    <h2 style="color: red">LTI Tool Setup</h2>
+                </div>
+                
+                <div class="mt-3">
+                    <div class="alert alert-danger text-black" role="alert">
+                        <span>With Gales upgrade to support LTI 1.3, we now support deeplinking of Gale content within the learning path. Please note, currently with LTI 1.3, only one Gale database app can be configured with each domain.</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mt-3">
+                <p>Login to Bright Space D2L as an Administrator and click on <i class="bi bi-gear" role="img" aria-label="Settings" alt="settings"></i>.</p>
+                <img src="https://assets.gale.com/docs/technical/technical_doc_images/d2l/lti13/tool_setup/D2L_LTI13_Manage_Extensibility.png" aria-label="Manage Extensibility" role="img" class="img-fluid" style="border: 2px solid black;">
+            </div>
+
+            <div class="mt-3">
+                <p>Click on <strong><em>LTI Advantage</em></strong>.</p>
+                <img src="https://assets.gale.com/docs/technical/technical_doc_images/d2l/lti13/tool_setup/D2L_LTI13_LTI_Advantage.png" aria-label="LTI Advantage" role="img" class="img-fluid" style="border: 2px solid black;">
+            </div>
+
+            <div class="mt-3">
+                <p>Click <strong><em>Register Tool</em></strong>.</p>
+                <img src="https://assets.gale.com/docs/technical/technical_doc_images/d2l/lti13/tool_setup/D2L_LTI13_LTI_Register_Tool.png" aria-label="Register Tool" role="img" class="img-fluid" style="border: 2px solid black;">
+            </div>
+
+            <div class="mt-3">
+                <p>Select <strong><em>Standard</em></strong>.</p>
+                <img src="https://assets.gale.com/docs/technical/technical_doc_images/d2l/lti13/tool_setup/D2L_LTI13_LTI_Register_Tool_Standard.png" aria-label="Standard Tool Registration" role="img" class="img-fluid" style="border: 2px solid black;">
+            </div>
+
+            <div class="mt-3">
+                <p>Under <strong><em>Name</em></strong> enter the name of the tool. (EX: Gale LTI 1.3 Prod).</p>
+                <p>Fill in the <strong><em>Description</em></strong> with the database that this is connected to.</p>
+                <p>Set <strong><em>Domain</em></strong> to <a href="https://link.gale.com/apps" style="text-decoration: none;" rel="external noopenner" role="link" aria-label="Domain">https://link.gale.com/apps</a></p>
+                <p>Set <strong><em>Redirect URLs</em></strong> to <a href="https://link.gale.com/apps/lti/launch" style="text-decoration: none;" rel="external noopenner" role="link" aria-label="Redirect URLs">https://link.gale.com/apps/lti/launch</a></p>
+                <p>Set <strong><em>OpenID Connect Login URL</em></strong> to <a href="https://link.gale.com/apps/lti/initLogin" style="text-decoration: none;" rel="external noopenner" role="link" aria-label="OpenID Connect Login URL">https://link.gale.com/apps/lti/initLogin</a></p>
+                <p>Set <strong><em>Target Link URI</em></strong> to <a href="https://link.gale.com/apps/lti/launch" style="text-decoration: none;" rel="external noopenner" role="link" aria-label="Target Link URI">https://link.gale.com/apps/lti/launch</a></p>
+                <p>Set <strong><em>Keyset URL</em></strong> to <a href="https://link.gale.com/apps/lti/security/jwks" style="text-decoration: none;" rel="external noopenner" role="link" aria-label="Keyset URL">https://link.gale.com/apps/lti/security/jwks</a></p>
+            </div>
+
+            <div class="mt-3">
+                <p>Toggle on <strong><em>Deep Linking</em></strong> under <strong><em>Extensions</em></strong>.</p>
+                <img src="https://assets.gale.com/docs/technical/technical_doc_images/d2l/lti13/tool_setup/D2L_LTI13_Deep_Linking.png" aria-label="check box deeplinking under extensions." role="img" class="img-fluid" style="border: 2px solid black;">
+                <p class="mt-3">Scroll down <strong><em>Customer Parameters</em></strong> and create two. You will need to name them <em>location</em> and <em>secret</em>.</p>
+                <p>For the value in <em>location</em> this will be the Gale Location ID. If you do not know what your Gale Location ID is, please contact <a href="matilto:gale.technicalsupport@cengage.com" style="text-decoration: none;" role="link" aria-label="Gale Customer Technical Support">Gale Customer Technical Support</a>.</p>
+                <p>For the value in <em>secret</em> this will be the LTI secret generated from Gale Admin. If you are not sure what your secret is, please contact <a href="matilto:gale.technicalsupport@cengage.com" style="text-decoration: none;" role="link" aria-label="Gale Customer Technical Support">Gale Customer Technical Support</a>.</p> 
+                <img src="https://assets.gale.com/docs/technical/technical_doc_images/d2l/lti13/tool_setup/D2L_LTI13_Custom_Parameters.png" aria-label="Add 2 customer parameters named location and secret." role="img" class="img-fluid" style="border: 2px solid black;">
+                <p class="mt-3">Click <strong><em>Register</em></strong>.</p>
+
+            </div>
+
+            <div class="mt-3">
+                <h2 style="color: red">Deployment</h2>
+            </div>
+
+            <div class="mt-3">
+                <p>After you have registered your LTI Tool. Scroll down to the bottom of the screen and click on <strong><em>Deployments</em></strong>.</p>
+                <img src="https://assets.gale.com/docs/technical/technical_doc_images/d2l/lti13/tool_setup/D2L_LTI13_View_Deployments.png" aria-label="View Deployments" role="img" class="img-fluid" style="border: 2px solid black;">
+                <p class="mt-3">Click on <strong><em>New Deployment</em></strong>.</p>
+                <img src="https://assets.gale.com/docs/technical/technical_doc_images/d2l/lti13/tool_setup/D2L_LTI13_New_Deployment.png" aria-label="New Deployment" role="img" class="img-fluid" style="border: 2px solid black;">
+                <p class="mt-3">Select the Tool just created from the Drop Down List.</p>
+                <img src="https://assets.gale.com/docs/technical/technical_doc_images/d2l/lti13/tool_setup/D2L_LTI13_Select_Tool.png" aria-label="Select newly created LTI Tool" role="img" class="img-fluid" style="border: 2px solid black;">
+            </div>
+
+            <div class="mt-3">
+                <p>In the <em>Name</em> field enter the name of the database. If you are unsure of Database names, download the list of our LIT compliant Databases <a href="https://assets.gale.com/docs/technical/LTI_Install_URLs_May2023.xlsx" role="link" aria-label="LTI Install URLs" style="text-decoration: none;">LTI Install URLs</a></p>
+                <p>Under <em>Security Settings</em> check box <strong><em>User ID</em></strong>.</p>
+                <img src="https://assets.gale.com/docs/technical/technical_doc_images/d2l/lti13/tool_setup/D2L_LTI13_Security_Settings.png" aria-label="Security Settings - User ID" role="img" class="img-fluid" style="border: 2px solid black;">
+                <p class="mt-3">Scroll down to <em>Custom Parameters</em> and click <strong><em>+ Add Custom Parameter</em></strong>.</p>
+                <p>In the <em>Name</em> enter <strong><em>product</em></strong>. For the value enter the Database Code in all Capital letters. If you are unsure of Database codes, download the list of our LIT compliant Databases <a href="https://assets.gale.com/docs/technical/LTI_Install_URLs_May2023.xlsx" role="link" aria-label="LTI Install URLs" style="text-decoration: none;">LTI Install URLs</a>.</p>
+                <img src="https://assets.gale.com/docs/technical/technical_doc_images/d2l/lti13/tool_setup/D2L_LTI13_Add_New_Custom_Parameter.png" aria-label="Add New Customer parameter of product with a value of the Database code in all capital letters." role="img" class="img-fluid" style="border: 2px solid black;">
+                <p class="mt-3">Add the needed Organizations that this product should be available in and click <em>Save</em> at the bottom of the page. </p>
+                <p>Click on <strong><em>View Links</em></strong> at the bottom of the page once the deployment has been saved.</p>
+                <img src="https://assets.gale.com/docs/technical/technical_doc_images/d2l/lti13/tool_setup/D2L_LTI13_View_Links.png" aria-label="Click View Links at the bottom of the page." role="img" class="img-fluid" style="border: 2px solid black;">
+
+            </div>
+
+            <div class="mt-3">
+                <h2 style="color: red">Links</h2>
+            </div>
+
+            <div class="mt-3">
+                <p>Click <strong><em>New Link</em></strong></p>
+                <img src="https://assets.gale.com/docs/technical/technical_doc_images/d2l/lti13/tool_setup/D2L_LTI13_New_Link.png" aria-label="Click New link button" role="img" class="img-fluid" style="border: 2px solid black;">
+                <p class="mt-3">Enter the name of the Database in the <em>Name</em> field.</p>
+                <p>Enter <a href="https://link.gale.com/apps/lti/launch" style="text-decoration: none;" role="link" aria-label="LTI Launch URL">https://link.gale.com/apps/lti/launch</a></p>
+                <p>Under <strong><em>Type</em></strong> Click the drop down menu and select <strong><em>Deep Linking Insert Stuff</em></strong>.</p>
+                <img src="https://assets.gale.com/docs/technical/technical_doc_images/d2l/lti13/tool_setup/D2L_LTI13_Deep_Linking_Insert_Stuff.png" aria-label="Change the type from basic to deep linking insert stuff" role="img" class="img-fluid" style="border: 2px solid black;">
+                <p class="mt-3">Scroll down and click <strong><em>Save and Close</em></strong>. </p>
+            </div>
+
+            <div class="mt-3">
+                <p>The Database is now set up for instructors to use. </p>
+                <p>Instructors can follow the following guide for accessing it inside of their course <a href="https://support.gale.com/doc/lmsinstall-d2l-deeplinking-lti13" target="_blank" rel="external noopenner" style="text-decoration: none;">https://support.gale.com/doc/lmsinstall-d2l-deeplinking-lti13</a></p>
+            </div>
         </div>
+    </main>
     </body>
 </html>
