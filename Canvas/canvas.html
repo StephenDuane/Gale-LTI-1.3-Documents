@@ -36,30 +36,34 @@
                 </div>
 
                 <div class="mt-3">
-                    <p>Navigate to <a href="https://link.gale.com/apps/lti13App" target="_blank" rel="noopenner">Generate JSON for creating Developer Key for LTI 1.3 Apps</a></p>
-                    <img src="https://assets.gale.com/docs/technical/technical_doc_images/canvas/LTI13/Canvas_LTI_1.3_JSON.png" aria-label="LTI 1.3 JSON Generator" class="img-fluid" style="border: 2px solid black">
-                    <p class="mt-3"></p>Fill out the <strong><em>Product Code</em></strong>, <strong><em>App Title</em></strong>, <strong><em>Description</em></strong>, <strong><em>Key*</em></strong>, <strong><em>Secret*</em></strong>.</p>
-                    <img src="https://assets.gale.com/docs/technical/technical_doc_images/canvas/LTI13/Canvas_LTI_1.3_JSON_Generator.png" aria-label="JSON Generator for LTI Developer Key required fields fille dout" class="img-fluid" style="border: 2px solid black">
-                    <p class="mt-3"><strong>*</strong>The key and secret will always be the same. If you do not know your Key or Secret please contact <a href="mailto:gale.technicalsupport@cengage.com" aria-label="Email Gale Technical Support">Gale Technical Support</a></p>
+                   <p>Under <em>Key Name</em> on the left hand side. Enter in the Database Name that is being connected.</p>
+                   <p>Under <em>Redirect URIs</em> enter <a href="https://link.gale.com/apps/lti/launch" rel="external noopenner" style="text-decoration: none;" role="link">https://link.gale.com/apps/lti/launch</a></p>
+                   <p>Under <em>Title</em> enter the name of the database.</p>
+                   <p>Under <em>Description</em> enter the name of the database.</p>
                 </div>
 
                 <div class="mt-3">
-                    <p>Once all fields are filled out. Please click <em><strong>Generate JSON</strong></em>. This will generate a JSON response that will be used inside of the Canvas setup.</p>
-                    <img src="https://assets.gale.com/docs/technical/technical_doc_images/canvas/LTI13/Canvas_LTI_1.3_Generate_JSON.png" aria-label="Button Generate JSON" class="img-fluid" style="border: 2px solid black">
+                    <p>Under <em>Target Link URI</em> enter <a href="https://link.gale.com/apps/lti/launch" rel="external noopenner" role="link" style="text-decoration: none;">https://link.gale.com/apps/lti/launch</a></p>
+                    <p>Under <em>OpenID Connect Initiation Url</em> enter <a href="https://link.gale.com/apps/lti/initLogin" rel="external noopenner" role="link" style="text-decoration: none;">https://link.gale.com/apps/lti/initLogin</a></p>
+                    <p>Change <em>JWK Method</em> from <strong>Public JWK</strong> to <strong>Public JWK URL</strong>.</p>
+                    <p>Under <em>Public JWK URL</em> enter <a href="https://link.gale.com/apps/lti/security/jwks"rel="external noopenner" role="link" style="text-decoration: none;">https://link.gale.com/apps/lti/security/jwks</a></p>
+                    <img src="https://assets.gale.com/docs/technical/technical_doc_images/canvas/lti13/Canvas_LTI_1.3_LTI_Tool_Setup.png" aria-label="LTI Title, description, and needed  URLs" role="img" class="img-fluid" style="border: 2px solid black;">
                 </div>
 
                 <div class="mt-3">
-                    <p>Click <strong><em>Copy this response to clipboard</em></strong>.</p>
-                    <img src="https://assets.gale.com/docs/technical/technical_doc_images/canvas/LTI13/Canvas_LTI_1.3_Copy_This_Response_To_Clipboard.png" aria-label="Button Copy this response to clipboard" class="img-fluid" style="border: 2px solid black;">
+                    <p>Scroll down to <strong><em>Additional Settings</em></strong> and expand it.</p>
+                    <p>Under <em>Custom Fields</em> enter <em>secret</em> and set it equal to the LTI secret from Gale Admin. Enter <em>product</em> and set it equal to the Gale database code. Please make sure it is in all capital letters. Enter <em>location</em> and set it equal to the Gale Location ID.</p>
+                    <img src="https://assets.gale.com/docs/technical/technical_doc_images/canvas/lti13/Canvas_LTI_1.3_Custom_Fields.png" aria-label="Custom parameters for product code, location, and secret." style="border: 2px solid black;" role="img" class="img-fluid">
+                    <p class="mt-3">If you are unsure of what your Gale Location ID or secret is. Please contact <a href="mailto:gale.technicalsupport@cengage.com" role="link" aria-label="Gale Customer Technical Support email address" style="text-decoration: none;">Gale Customer Technical Support</a> for assistance. If you are needing database codes, please download our <a href="https://assets.gale.com/docs/technical/Gale_LTI_CertifiedProductsList_May2023.xlsx" role="link" aria-label="Gale LTI Certified Products List" style="text-decoration: none;">Gale LTI Certified Products List</a></p>
                 </div>
 
                 <div class="mt-3">
-                    <p>Return to your Canvas tab in your web browser. Fill out the Key Name (this can be the name of the database).</p>
-                    <p>Change the <em>Method</em> dropdown to <strong><em>Paste JSON</em></strong> and paste the copied response from your clipboard that was copied.</p>
-                    <img src="https://assets.gale.com/docs/technical/technical_doc_images/canvas/LTI13/Canvas_LTI_1.3_Key_Name_Method_Paste_JSON.png" aria-label="Fill out the Key Name with the Database Name and paste the copied JSON response into the box." class="img-fluid" style="border: 2px solid black;">
-                    <p class="mt-3">Change the <em>Method</em> dropdown back to <strong><em>Manual</em></strong> and verify that all fields are filled out correctly.</p>
-                    <p>If all fields are filled out correctly. Click <strong><em>Save</em></strong> at the bottom of the page.</p>
-                    <img src="https://assets.gale.com/docs/technical/technical_doc_images/canvas/LTI13/Canvas_LTI_1.3_Admin_Save_Button.png" aria-label="Button Save Button" class="img-fluid" style="border: 2px solid black;">
+                   <p>Under <strong><em>Placements</em></strong> set <em>Editor Button</em>, <em>Course Navigation</em>, and <em>Link Selection</em>.</p>
+                   <p>Under <em>Placements</em> expand <strong><em>Editor Button</em></strong> Set the <em>Target Link URI</em> to <a href="https://link.gale.com/apps/lti/launch" rel="external noopenner" style="text-decoration: none;" aria-label="Gale LTI Launch URL">https://link.gale.com/apps/lti/launch</a></p>
+                   <p>Under <strong><em>Icon Url (required unless present in Additional Settings)</em></strong> set it to <a href="https://link.gale.com/apps/resources/images/gale-logo.jpg" role="link" style="text-decoration: none;" rel="external noopenner" aria-label="Gale Apps Logo">https://link.gale.com/apps/resources/images/gale-logo.jpg</a></p>
+                   <p>Under <strong><em>Text</em></strong> enter the database code in all capital leters.</p>
+                   <p>Under <strong><em>Section Height</em></strong> enter <em>600</em> under <strong><em>Section Width</em></strong> enter <em>1000</em></p>
+                   <p>Click the <strong><em></em>Save</strong> button in the bottom right of the screen.</p>
                 </div>
 
                 <div class="mt-3 text">
