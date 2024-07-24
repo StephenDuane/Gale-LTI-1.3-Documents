@@ -1,29 +1,1538 @@
-### Overview
-- This spacing is for the development of the Support Site documents for the Gale LTI 1.3 release
-- Canvas is the only document currently with any anything filled out. 
-
-
-### HTML Boiler plate to use
+<html>
     <head>
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+        <style>
+            table.table-bordered {
+                border: 1px solid black;
+            }
+
+            table.table-bordered > thead > tr> th {
+                border: 1px solid black;
+            }
+
+            table.table-bordered > tbody > tr> td {
+                border: 1px solid black;
+            }
+
+            table.table-bordered > tbody > tr> th {
+                border: 1px solid black;
+            }
+        </style>
     </head>
 
     <body>
-        <main class="ml-3">
-            <div class="d-grid">
-                <div class="mt-3"></div>
-                <div class="mt-3"></div>
-                <div class="mt-3"></div>
-                <div class="mt-3"></div>
-                <div class="mt-3"></div>
-                <div class="mt-3"></div>
-                <div class="mt-3"></div>
-                <div class="mt-3"></div>
+            <div class="alert alert-primary text-black align-items-center" role="alert">
+                <i class="bi bi-info-circle-fill"></i> If you using <em><strong>LTI 1.3</strong></em> with Canvas, D2L (Brightspace), Moodle or Blackboard. 
+                Please only copy the <em>Database Name </em>and <em>Database Code</em>. 
+                For <strong><em>LTI 1.1</em></strong> with Canvas, D2L (Brightspace), Blackboard, Classlink LTI or Moodle. Please look at the respected columns and rows for them.
             </div>
-        </main>
+
+            <div class="alert alert-primary text-black align-items-center" role="alert">
+                <i class="bi bi-info-circle-fill"></i> Products are aligned in different tables based off their product family. (I.E OneFile, In Context, Primary Source, or Additionally supported databases.)
+            </div>
+
+        <div class="table-responsive-lg">
+            <table class="table table-striped table-bordered table-hover">
+                <caption>Gale OneFile LTI certified databases.</caption>
+                <thead>
+                    <tr>
+                        <th scope="col">#</th>
+                        <th scope="col">Database Name:</th>
+                        <th scope="col">Database Code:</th>
+                        <th scope="col">Available in Schoology App Center</th>
+                        <th scope="col">config_URL (Canvas)</th>
+                        <th scope="col">launch_URL (use with custom parameters -->)</th>
+                        <th scope="col">custom_parameters (Moodle)</th>
+                        <th scope="col">custom_parameters (D2L Brightspace)</th>
+                        <th scope="col">custom_parameters (Blackboard)</th>
+                        <th scope="col">custom_parameters (ClassLink)</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <th scope="row">1</th>
+                        <td>Gale Academic OneFile</td>
+                        <td>AONE</td>
+                        <td>Gale Academic OneFile</td>
+                        <td><a href="https://link.gale.com/apps/configuration.xml?product=AONE&lms=canvas" rel="external noopenner" style="text-decoration: none;">https://link.gale.com/apps/configuration.xml?product=AONE&lms=canvas</a></td>
+                        <td><a href="https://link.gale.com/apps/launch" rel="external noopener" style="text-decoration: none;">https://link.gale.com/apps/launch</a></td>
+                        <td>action=create activity
+                            product=AONE
+                            lms_name=moodle</td>
+                        <td>product=AONE
+                            lms_name=d2l</td>
+                        <td>product=AONE
+                            lms_name=blackboard</td>
+                        <td>product=AONE
+                            lms_name=classlinklti</td>
+                    </tr>
+
+                    <tr>
+                        <th scope="row">2</th>
+                        <td>Gale OneFile: Computer Science</td>
+                        <td>CBD</td>
+                        <td>Not currently available - request through Technical Suport</td>
+                        <td><a href="https://link.gale.com/apps/configuration.xml?product=CDB&lms=canvas" rel="external noopenner" style="text-decoration: none;">https://link.gale.com/apps/configuration.xml?product=CDB&lms=canvas</a></td>
+                        <td><a href="https://link.gale.com/apps/launch" rel="external noopener" style="text-decoration: none;">https://link.gale.com/apps/launch</a></td>
+                        <td>action=create activity
+                            product=CDB
+                            lms_name=moodle</td>
+                        <td>product=AONE
+                            lms_name=d2l</td>
+                        <td>product=AONE
+                            lms_name=blackboard</td>
+                        <td>product=AONE
+                            lms_name=classlinklti</td>
+                    </tr>
+
+                    <tr>
+                        <th scope="row">3</th>
+                        <td>Gale OneFile: CPI.Q</td>
+                        <td>CPI</td>
+                        <td>Not currently available - request through Technical Support</td>
+                        <td><a href="https://link.gale.com/apps/configuration.xml?product=CPI&lms=canvas" rel="external noopenner" style="text-decoration: none;">https://link.gale.com/apps/configuration.xml?product=CPI&lms=canvas</a></td>
+                        <td><a href="https://link.gale.com/apps/launch" rel="external noopener" style="text-decoration: none;">https://link.gale.com/apps/launch</a></td>
+                        <td>action=create activity
+                            product=CPI
+                            lms_name=moodle</td>
+                        <td>product=CPI
+                            lms_name=d2l</td>
+                        <td>product=CPI
+                            lms_name=blackboard</td>
+                        <td>product=CPI
+                            lms_name=classlinklti</td>
+                    </tr>
+
+                    <tr>
+                        <th scope="row">4</th>
+                        <td>Gale OneFile: Contemporary Women's Issues</td>
+                        <td>CWI</td>
+                        <td>Not currently available - request through Technical Support</td>
+                        <td><a href="https://link.gale.com/apps/configuration.xml?product=CWI&lms=canvas" rel="external noopenner" style="text-decoration: none;">https://link.gale.com/apps/configuration.xml?product=CWI&lms=canvas</a></td>
+                        <td><a href="https://link.gale.com/apps/launch" rel="external noopener" style="text-decoration: none;">https://link.gale.com/apps/launch</a></td>
+                        <td>action=create activity
+                            product=CWI
+                            lms_name=moodle</td>
+                        <td>product=CWI
+                            lms_name=d2l</td>
+                        <td>product=CWI
+                            lms_name=blackboard</td>
+                        <td>product=CWI
+                            lms_name=classlinklti</td>
+                    </tr>
+
+                    <tr>
+                        <th scope="row">5</th>
+                        <td>Gale Academic OneFile Select</td>
+                        <td>EAIM</td>
+                        <td>Gale Academic OneFile Select</td>
+                        <td><a href="https://link.gale.com/apps/configuration.xml?product=EAIM&lms=canvas" rel="external noopenner" style="text-decoration: none;">https://link.gale.com/apps/configuration.xml?product=EAIM&lms=canvas</a></td>
+                        <td><a href="https://link.gale.com/apps/launch" rel="external noopener" style="text-decoration: none;">https://link.gale.com/apps/launch</a></td>
+                        <td>action=create activity
+                            product=EAIM
+                            lms_name=moodle</td>
+                        <td>product=EAIM
+                            lms_name=d2l</td>
+                        <td>product=EAIM
+                            lms_name=blackboard</td>
+                        <td>product=EAIM
+                            lms_name=classlinklti</td>
+                    </tr>
+
+                    <tr>
+                        <th scope="row">6</th>
+                        <td>Gale OneFile: Health and Medicine</td>
+                        <td>HRCA</td>
+                        <td>Not currently available - request through Technical Support</td>
+                        <td><a href="https://link.gale.com/apps/configuration.xml?product=HRCA&lms=canvas" rel="external noopenner" style="text-decoration: none;">https://link.gale.com/apps/configuration.xml?product=HRCA&lms=canvas</a></td>
+                        <td><a href="https://link.gale.com/apps/launch" rel="external noopener" style="text-decoration: none;">https://link.gale.com/apps/launch</a></td>
+                        <td>action=create activity
+                            product=HRCA
+                            lms_name=moodle</td>
+                        <td>product=HRCA
+                            lms_name=d2l</td>
+                        <td>product=HRCA
+                            lms_name=d2l</td>
+                        <td>product=HRCA
+                            lms_name=classlinklti</td>
+                    </tr>
+
+                    <tr>
+                        <th scope="row">7</th>
+                        <td>Gale OneFile: Informe Académico</td>
+                        <td>IFME</td>
+                        <td>Gale OneFile: Informe Académico</td>
+                        <td><a href="https://link.gale.com/apps/configuration.xml?product=IFME&lms=canvas" rel="external noopenner" style="text-decoration: none;">https://link.gale.com/apps/configuration.xml?product=IFME&lms=canvas</a></td>
+                        <td><a href="https://link.gale.com/apps/launch" rel="external noopener" style="text-decoration: none;">https://link.gale.com/apps/launch</a></td>
+                        <td>action=create activity
+                            product=IFME
+                            lms_name=moodle</td>
+                        <td>product=IFME
+                            lms_name=d2l</td>
+                        <td>product=IFME
+                            lms_name=blackboard</td>
+                        <td>product=IFME
+                            lms_name=classlinklti</td>
+                    </tr>
+
+                    <tr>
+                        <th scope="row">8</th>
+                        <td>Gale OneFile: Business</td>
+                        <td>ITBC</td>
+                        <td>Gale OneFile: Business</td>
+                        <td><a href="https://link.gale.com/apps/configuration.xml?product=ITBC&lms=canvas" rel="external noopenner" style="text-decoration: none;">https://link.gale.com/apps/configuration.xml?product=ITBC&lms=canvas</a></td>
+                        <td><a href="https://link.gale.com/apps/launch" rel="external noopener" style="text-decoration: none;">https://link.gale.com/apps/launch</a></td>
+                        <td>action=create activity
+                            product=ITBC
+                            lms_name=moodle</td>
+                        <td>product=ITBC
+                            lms_name=d2l</td>
+                        <td>product=ITBC
+                            lms_name=blackboard</td>
+                        <td>product=ITBC
+                            lms_name=classlinklti</td>
+                    </tr>
+
+                    <tr>
+                        <th scope="row">9</th>
+                        <td>Gale General OneFile</td>
+                        <td>ITOF</td>
+                        <td>Gale General OneFile</td>
+                        <td><a href="https://link.gale.com/apps/configuration.xml?product=ITOF&lms=canvas" rel="external noopenner" style="text-decoration: none;">https://link.gale.com/apps/configuration.xml?product=ITOF&lms=canvas</a></td>
+                        <td><a href="https://link.gale.com/apps/launch" rel="external noopener" style="text-decoration: none;">https://link.gale.com/apps/launch</a></td>
+                        <td>action=create activity
+                            product=ITOF
+                            lms_name=moodle</td>
+                        <td>product=ITOF
+                            lms_name=d2l</td>
+                        <td>product=ITOF
+                            lms_name=blackboard</td>
+                        <td>product=ITOF
+                            lms_name=classlinklti</td>
+                    </tr>
+
+                    <tr>
+                        <th scope="row">10</th>
+                        <td>Gale OneFile: LegalTrac</td>
+                        <td>LT</td>
+                        <td>Not currently available - request through Technical Support</td>
+                        <td><a href="https://link.gale.com/apps/configuration.xml?product=LT&lms=canvas" rel="external noopenner" style="text-decoration: none;">https://link.gale.com/apps/configuration.xml?product=LT&lms=canvas</a></td>
+                        <td><a href="https://link.gale.com/apps/launch" rel="external noopener" style="text-decoration: none;">https://link.gale.com/apps/launch</a></td>
+                        <td>action=create activity
+                            product=LT
+                            lms_name=moodle</td>
+                        <td>product=LT
+                            lms_name=d2l</td>
+                        <td>product=LT
+                            lms_name=blackboard</td>
+                        <td>product=LT
+                            lms_name=classlinklti</td>
+                    </tr>
+
+                    <tr>
+                        <th scope="row">11</th>
+                        <td>Gale OneFile: Agriculture</td>
+                        <td>PPAG</td>
+                        <td>Not currently available - request through Technical Support</td>
+                        <td><a href="https://link.gale.com/apps/configuration.xml?product=PPAG&lms=canvas" rel="external noopenner" style="text-decoration: none;">https://link.gale.com/apps/configuration.xml?product=PPAG&lms=canvas</a></td>
+                        <td><a href="https://link.gale.com/apps/launch" rel="external noopener" style="text-decoration: none;">https://link.gale.com/apps/launch</a></td>
+                        <td>action=create activity
+                            product=PPAG
+                            lms_name=moodle</td>
+                        <td>product=PPAG
+                            lms_name=d2l</td>
+                        <td>product=PPAG
+                            lms_name=blackboard</td>
+                        <td>product=PPAG
+                            lms_name=classlinklti</td>
+                    </tr>
+
+                    <tr>
+                        <th scope="row">12</th>
+                        <td>Gale OneFile: Economics and Theory</td>
+                        <td>PPBE</td>
+                        <td>Not currently available - request through Technical Support</td>
+                        <td><a href="https://link.gale.com/apps/configuration.xml?product=PPBE&lms=canvas" rel="external noopenner" style="text-decoration: none;">https://link.gale.com/apps/configuration.xml?product=PPBE&lms=canvas</a></td>
+                        <td><a href="https://link.gale.com/apps/launch" rel="external noopener" style="text-decoration: none;">https://link.gale.com/apps/launch</a></td>
+                        <td>action=create activity
+                            product=PPBE
+                            lms_name=moodle</td>
+                        <td>product=PPBE
+                            lms_name=d2l</td>
+                        <td>product=PPBE
+                            lms_name=blackboard</td>
+                        <td>product=PPBE
+                            lms_name=classlinklti</td>
+                    </tr>
+
+                    <tr>
+                        <th scope="row">13</th>
+                        <td>Gale OneFile: Culinary Arts</td>
+                        <td>PPCA</td>
+                        <td>Not currently available - request through Technical Support</td>
+                        <td><a href="https://link.gale.com/apps/configuration.xml?product=PPCA&lms=canvas" rel="external noopenner" style="text-decoration: none;">https://link.gale.com/apps/configuration.xml?product=PPCA&lms=canvas</a></td>
+                        <td><a href="https://link.gale.com/apps/launch" rel="external noopener" style="text-decoration: none;">https://link.gale.com/apps/launch</a></td>
+                        <td>action=create activity
+                            product=PPCA
+                            lms_name=moodle</td>
+                        <td>product=PPCA
+                            lms_name=d2l</td>
+                        <td>product=PPCA
+                            lms_name=blackboard</td>
+                        <td>product=PPCA
+                            lms_name=classlinklti</td>
+                    </tr>
+
+                    <tr>
+                        <th scope="row">14</th>
+                        <td>Gale OneFile: Criminal Justice</td>
+                        <td>PPCJ</td>
+                        <td>Not currently available - request through Technical Support</td>
+                        <td><a href="https://link.gale.com/apps/configuration.xml?product=PPCJ&lms=canvas" rel="external noopenner" style="text-decoration: none;">https://link.gale.com/apps/configuration.xml?product=PPCJ&lms=canvas</a></td>
+                        <td><a href="https://link.gale.com/apps/launch" rel="external noopener" style="text-decoration: none;">https://link.gale.com/apps/launch</a></td>
+                        <td>action=create activity
+                            product=PPCJ
+                            lms_name=moodle</td>
+                        <td>product=PPCJ
+                            lms_name=d2l</td>
+                        <td>product=PPCJ
+                            lms_name=blackboard</td>
+                        <td>product=PPCJ
+                            lms_name=classlinklti</td>
+                    </tr>
+
+                    <tr>
+                        <th scope="row">15</th>
+                        <td>Gale OneFile: Communications and Mass Media</td>
+                        <td>PPCM</td>
+                        <td>Not currently available - request through Technical Support</td>
+                        <td><a href="https://link.gale.com/apps/configuration.xml?product=PPCM&lms=canvas" rel="external noopenner" style="text-decoration: none;">https://link.gale.com/apps/configuration.xml?product=PPCM&lms=canvas</a></td>
+                        <td><a href="https://link.gale.com/apps/launch" rel="external noopener" style="text-decoration: none;">https://link.gale.com/apps/launch</a></td>
+                        <td>action=create activity
+                            product=PPCM
+                            lms_name=moodle</td>
+                        <td>product=PPCM
+                            lms_name=d2l</td>
+                        <td>product=PPCM
+                            lms_name=blackboard</td>
+                        <td>product=PPCM
+                            lms_name=classlinklti</td>
+                    </tr>
+
+                    <tr>
+                        <th scope="row">16</th>
+                        <td>Gale OneFile: Diversity Studies</td>
+                        <td>PPDS</td>
+                        <td>Not currently available - request through Technical Support</td>
+                        <td><a href="https://link.gale.com/apps/configuration.xml?product=PPDS&lms=canvas" rel="external noopenner" style="text-decoration: none;">https://link.gale.com/apps/configuration.xml?product=PPDS&lms=canvas</a></td>
+                        <td><a href="https://link.gale.com/apps/launch" rel="external noopener" style="text-decoration: none;">https://link.gale.com/apps/launch</a></td>
+                        <td>action=create activity
+                            product=PPDS
+                            lms_name=moodle</td>
+                        <td>product=PPDS
+                            lms_name=d2l</td>
+                        <td>product=PPDS
+                            lms_name=blackboard</td>
+                        <td>product=PPDS
+                            lms_name=classlinklti</td>
+                    </tr>
+
+                    <tr>
+                        <th scope="row">17</th>
+                        <td>Gale OneFile: Environmental Studies and Policy</td>
+                        <td>PPES</td>
+                        <td>Not currently available - request through Technical Support</td>
+                        <td><a href="https://link.gale.com/apps/configuration.xml?product=PPES&lms=canvas" rel="external noopenner" style="text-decoration: none;">https://link.gale.com/apps/configuration.xml?product=PPES&lms=canvas</a></td>
+                        <td><a href="https://link.gale.com/apps/launch" rel="external noopener" style="text-decoration: none;">https://link.gale.com/apps/launch</a></td>
+                        <td>action=create activity
+                            product=PPES
+                            lms_name=moodle</td>
+                        <td>product=PPES
+                            lms_name=d2l</td>
+                        <td>product=PPES
+                            lms_name=d2l</td>
+                        <td>product=PPES
+                            lms_name=classlinklti</td>
+                    </tr>
+
+                    <tr>
+                        <th scope="row">18</th>
+                        <td>Gale OneFile: Fine Arts</td>
+                        <td>PPFA</td>
+                        <td>Not currently available - request through Technical Support</td>
+                        <td><a href="https://link.gale.com/apps/configuration.xml?product=PPFA&lms=canvas" rel="external noopenner" style="text-decoration: none;">https://link.gale.com/apps/configuration.xml?product=PPFA&lms=canvas</a></td>
+                        <td><a href="https://link.gale.com/apps/launch" rel="external noopener" style="text-decoration: none;">https://link.gale.com/apps/launch</a></td>
+                        <td>action=create activity
+                            product=PPFA
+                            lms_name=moodle</td>
+                        <td>product=PPFA
+                            lms_name=d2l</td>
+                        <td>product=PPFA
+                            lms_name=blackboard</td>
+                        <td>product=PPFA
+                            lms_name=classlinklti</td>
+                    </tr>
+
+                    <tr>
+                        <th scope="row">19</th>
+                        <td>Gale OneFile: Gender Studies</td>
+                        <td>PPGB</td>
+                        <td>Not currently available - request through Technical Support</td>
+                        <td><a href="https://link.gale.com/apps/configuration.xml?product=PPGB&lms=canvas" rel="external noopenner" style="text-decoration: none;">https://link.gale.com/apps/configuration.xml?product=PPGB&lms=canvas</a></td>
+                        <td><a href="https://link.gale.com/apps/launch" rel="external noopener" style="text-decoration: none;">https://link.gale.com/apps/launch</a></td>
+                        <td>action=create activity
+                            product=PPGB
+                            lms_name=moodle</td>
+                        <td>product=PPGB
+                            lms_name=d2l</td>
+                        <td>product=PPGB
+                            lms_name=blackboard</td>
+                        <td>product=PPGB
+                            lms_name=classlinklti</td>
+                    </tr>
+
+                    <tr>
+                        <th scope="row">20</th>
+                        <td>Gale OneFile: Gardening and Horticulture</td>
+                        <td>PPGL</td>
+                        <td>Gale OneFile: Gardening and Horticulture</td>
+                        <td><a href="https://link.gale.com/apps/configuration.xml?product=PPGL&lms=canvas" rel="external noopenner" style="text-decoration: none;">https://link.gale.com/apps/configuration.xml?product=PPGL&lms=canvas</a></td>
+                        <td><a href="https://link.gale.com/apps/launch" rel="external noopener" style="text-decoration: none;">https://link.gale.com/apps/launch</a></td>
+                        <td>action=create activity
+                            product=PPGL
+                            lms_name=moodle</td>
+                        <td>product=PPGL
+                            lms_name=d2l</td>
+                        <td>product=PPGL
+                            lms_name=blackboard</td>
+                        <td>product=PPGL
+                            lms_name=classlinklti</td>
+                    </tr>
+
+                    <tr>
+                        <th scope="row">21</th>
+                        <td>Gale OneFile: Science</td>
+                        <td>PPGS</td>
+                        <td>Gale OneFile: Science</td>
+                        <td><a href="https://link.gale.com/apps/configuration.xml?product=PPGS&lms=canvas" rel="external noopenner" style="text-decoration: none;">https://link.gale.com/apps/configuration.xml?product=PPGS&lms=canvas</a></td>
+                        <td><a href="https://link.gale.com/apps/launch" rel="external noopener" style="text-decoration: none;">https://link.gale.com/apps/launch</a></td>
+                        <td>action=create activity
+                            product=PPGS
+                            lms_name=moodle</td>
+                        <td>product=PPGS
+                            lms_name=d2l</td>
+                        <td>product=PPGS
+                            lms_name=blackboard</td>
+                        <td>product=PPGS
+                            lms_name=classlinklti</td>
+                    </tr>
+
+                    <tr>
+                        <th scope="row">22</th>
+                        <td>Gale OneFile: Home Improvement</td>
+                        <td>PPHI</td>
+                        <td>Gale OneFile: Home Improvement</td>
+                        <td><a href="https://link.gale.com/apps/configuration.xml?product=PPHI&lms=canvas" rel="external noopenner" style="text-decoration: none;">https://link.gale.com/apps/configuration.xml?product=PPHI&lms=canvas</a></td>
+                        <td><a href="https://link.gale.com/apps/launch" rel="external noopener" style="text-decoration: none;">https://link.gale.com/apps/launch</a></td>
+                        <td>action=create activity
+                            product=PPHI
+                            lms_name=moodle</td>
+                        <td>product=PPHI
+                            lms_name=d2l</td>
+                        <td>product=PPHI
+                            lms_name=blackboard</td>
+                        <td>product=PPHI
+                            lms_name=classlinklti</td>
+                    </tr>
+
+                    <tr>
+                        <th scope="row">23</th>
+                        <td>Gale OneFile: Insurance and Liability</td>
+                        <td>PPIL</td>
+                        <td>Not currently available - request through Technical Support</td>
+                        <td><a href="https://link.gale.com/apps/configuration.xml?product=PPIL&lms=canvas" rel="external noopenner" style="text-decoration: none;">https://link.gale.com/apps/configuration.xml?product=PPIL&lms=canvas</a></td>
+                        <td><a href="https://link.gale.com/apps/launch" rel="external noopener" style="text-decoration: none;">https://link.gale.com/apps/launch</a></td>
+                        <td>action=create activity
+                            product=PPIL
+                            lms_name=moodle</td>
+                        <td>product=PPIL
+                            lms_name=d2l</td>
+                        <td>product=PPIL
+                            lms_name=blackboard
+                            </td>
+                        <td>product=PPIL
+                            lms_name=classlinklti
+                            </td>
+                    </tr>
+
+                    <tr>
+                        <th scope="row">24</th>
+                        <td>Gale OneFile: Information Science</td>
+                        <td>PPIS</td>
+                        <td>Not currently available - request through Technical Support</td>
+                        <td><a href="https://link.gale.com/apps/configuration.xml?product=PPIS&lms=canvas" rel="external noopenner" style="text-decoration: none;">https://link.gale.com/apps/configuration.xml?product=PPIS&lms=canvas</a></td>
+                        <td><a href="https://link.gale.com/apps/launch" rel="external noopener" style="text-decoration: none;">https://link.gale.com/apps/launch</a></td>
+                        <td>action=create activity
+                            product=PPIS
+                            lms_name=moodle</td>
+                        <td>"product=PPIS
+                            lms_name=d2l"</td>
+                        <td>product=PPIS
+                            lms_name=blackboard</td>
+                        <td>product=PPIS
+                            lms_name=classlinklti</td>
+                    </tr>
+
+                    <tr>
+                        <th scope="row">25</th>
+                        <td>Gale OneFile: Military and Intelligence</td>
+                        <td>PPMI</td>
+                        <td>Not currently available - request through Technical Support</td>
+                        <td><a href="https://link.gale.com/apps/configuration.xml?product=PPMI&lms=canvas" rel="external noopenner" style="text-decoration: none;">https://link.gale.com/apps/configuration.xml?product=PPMI&lms=canvas</a></td>
+                        <td><a href="https://link.gale.com/apps/launch" rel="external noopener" style="text-decoration: none;">https://link.gale.com/apps/launch</a></td>
+                        <td>action=create activity
+                            product=PPMI
+                            lms_name=moodle</td>
+                        <td>product=PPMI
+                            lms_name=d2l</td>
+                        <td>product=PPMI
+                            lms_name=blackboard</td>
+                        <td>product=PPMI
+                            lms_name=classlinklti</td>
+                    </tr>
+
+                    <tr>
+                        <th scope="row">26</th>
+                        <td>Gale OneFile: Nursing and Allied Health</td>
+                        <td>PPNU</td>
+                        <td>Not currently available - request through Technical Support</td>
+                        <td><a href="https://link.gale.com/apps/configuration.xml?product=PPNU&lms=canvas" rel="external noopenner" style="text-decoration: none;">https://link.gale.com/apps/configuration.xml?product=PPNU&lms=canvas</a></td>
+                        <td><a href="https://link.gale.com/apps/launch" rel="external noopener" style="text-decoration: none;">https://link.gale.com/apps/launch</a></td>
+                        <td>action=create activity
+                            product=PPNU
+                            lms_name=moodle</td>
+                        <td>product=PPNU
+                            lms_name=d2l</td>
+                        <td>product=PPNU
+                            lms_name=blackboard</td>
+                        <td>product=PPNU
+                            lms_name=classlinklti</td>
+                    </tr>
+
+                    <tr>
+                        <th scope="row">27</th>
+                        <td>Gale OneFile: Pop Culture Studies</td>
+                        <td>PPOP</td>
+                        <td>Not currently available - request through Technical Support</td>
+                        <td><a href="https://link.gale.com/apps/configuration.xml?product=PPOP&lms=canvas" rel="external noopenner" style="text-decoration: none;">https://link.gale.com/apps/configuration.xml?product=PPOP&lms=canvas</a></td>
+                        <td><a href="https://link.gale.com/apps/launch" rel="external noopener" style="text-decoration: none;">https://link.gale.com/apps/launch</a></td>
+                        <td>action=create activity
+                            product=PPOP
+                            lms_name=moodle</td>
+                        <td>product=PPOP
+                            lms_name=d2l</td>
+                        <td>product=PPOP
+                            lms_name=blackboard</td>
+                        <td>product=PPOP
+                            lms_name=classlinklti</td>
+                    </tr>
+
+                    <tr>
+                        <th scope="row">28</th>
+                        <td>Gale OneFile: Psychology</td>
+                        <td>PPPC</td>
+                        <td>Not currently available - request through Technical Support</td>
+                        <td><a href="https://link.gale.com/apps/configuration.xml?product=PPPC&lms=canvas" rel="external noopenner" style="text-decoration: none;">https://link.gale.com/apps/configuration.xml?product=PPPC&lms=canvas</a></td>
+                        <td><a href="https://link.gale.com/apps/launch" rel="external noopener" style="text-decoration: none;">https://link.gale.com/apps/launch</a></td>
+                        <td>action=create activity
+                            product=PPPC
+                            lms_name=moodle</td>
+                        <td>product=PPPC
+                            lms_name=d2l</td>
+                        <td>product=PPPC
+                            lms_name=blackboard</td>
+                        <td>product=PPPC
+                            lms_name=classlinklti</td>
+                    </tr>
+
+                    <tr>
+                        <th scope="row">29</th>
+                        <td>Gale OneFile: Popular Magazines</td>
+                        <td>PPPM</td>
+                        <td>Not currently available - request through Technical Support</td>
+                        <td><a href="https://link.gale.com/apps/configuration.xml?product=PPPM&lms=canvas" rel="external noopenner" style="text-decoration: none;">https://link.gale.com/apps/configuration.xml?product=PPPM&lms=canvas</a></td>
+                        <td><a href="https://link.gale.com/apps/launch" rel="external noopener" style="text-decoration: none;">https://link.gale.com/apps/launch</a></td>
+                        <td>action=create activity
+                            product=PPPM
+                            lms_name=moodle</td>
+                        <td>product=PPPM
+                            lms_name=d2l</td>
+                        <td>product=PPPM
+                            lms_name=blackboard</td>
+                        <td>product=PPPM
+                            lms_name=classlinklti</td>
+                    </tr>
+
+                    <tr>
+                        <th scope="row">30</th>
+                        <td>Gale OneFile: Leadership and Management</td>
+                        <td>PPRF</td>
+                        <td>Gale OneFile: Leadership and Management</td>
+                        <td><a href="https://link.gale.com/apps/configuration.xml?product=PPRF&lms=canvas" rel="external noopenner" style="text-decoration: none;">https://link.gale.com/apps/configuration.xml?product=PPRF&lms=canvas</a></td>
+                        <td><a href="https://link.gale.com/apps/launch" rel="external noopener" style="text-decoration: none;">https://link.gale.com/apps/launch</a></td>
+                        <td>action=create activity
+                            product=PPRF
+                            lms_name=moodle</td>
+                        <td>product=PPRF
+                            lms_name=d2l</td>
+                        <td>product=PPRF
+                            lms_name=blackboard</td>
+                        <td>product=PPRF
+                            lms_name=classlinklti</td>
+                    </tr>
+
+                    <tr>
+                        <th scope="row">31</th>
+                        <td>Gale OneFile: Religion and Philosophy</td>
+                        <td>PPRP</td>
+                        <td>Not currently available - request through Technical Support</td>
+                        <td><a href="https://link.gale.com/apps/configuration.xml?product=PPRP&lms=canvas" rel="external noopenner" style="text-decoration: none;">https://link.gale.com/apps/configuration.xml?product=PPRP&lms=canvas</a></td>
+                        <td><a href="https://link.gale.com/apps/launch" rel="external noopener" style="text-decoration: none;">https://link.gale.com/apps/launch</a></td>
+                        <td>action=create activity
+                            product=PPRP
+                            lms_name=moodle</td>
+                        <td>product=PPRP
+                            lms_name=d2l</td>
+                        <td>product=PPRP
+                            lms_name=blackboard</td>
+                        <td>product=PPRP
+                            lms_name=classlinklti</td>
+                    </tr>
+
+                    <tr>
+                        <th scope="row">32</th>
+                        <td>Gale OneFile: Entrepreneurship</td>
+                        <td>PPSB</td>
+                        <td>Gale OneFile: Entrepreneurship</td>
+                        <td><a href="https://link.gale.com/apps/configuration.xml?product=PPSB&lms=canvas" rel="external noopenner" style="text-decoration: none;">https://link.gale.com/apps/configuration.xml?product=PPSB&lms=canvas</a></td>
+                        <td><a href="https://link.gale.com/apps/launch" rel="external noopener" style="text-decoration: none;">https://link.gale.com/apps/launch</a></td>
+                        <td>action=create activity
+                            product=PPSB
+                            lms_name=moodle</td>
+                        <td>product=PPSB
+                            lms_name=d2l</td>
+                        <td>product=PPSB
+                            lms_name=blackboard</td>
+                        <td>product=PPSB
+                            lms_name=classlinklti</td>
+                    </tr>
+
+                    <tr>
+                        <th scope="row">33</th>
+                        <td>Gale OneFile: Physical Therapy and Sports Medicine</td>
+                        <td>PPSM</td>
+                        <td>Not currently available - request through Technical Support</td>
+                        <td><a href="https://link.gale.com/apps/configuration.xml?product=PPSM&lms=canvas" rel="external noopenner" style="text-decoration: none;">https://link.gale.com/apps/configuration.xml?product=PPSM&lms=canvas</a></td>
+                        <td><a href="https://link.gale.com/apps/launch" rel="external noopener" style="text-decoration: none;">https://link.gale.com/apps/launch</a></td>
+                        <td>action=create activity
+                            product=PPSM
+                            lms_name=moodle</td>
+                        <td>product=PPSM
+                            lms_name=d2l</td>
+                        <td>product=PPSM
+                            lms_name=blackboard</td>
+                        <td>product=PPSM
+                            lms_name=classlinklti</td>
+                    </tr>
+
+                    <tr>
+                        <th scope="row">34</th>
+                        <td>Gale OneFile: Hospitality and Tourism</td>
+                        <td>PPTH</td>
+                        <td>Gale OneFile: Hospitality and Tourism</td>
+                        <td><a href="https://link.gale.com/apps/configuration.xml?product=PPTH&lms=canvas" rel="external noopenner" style="text-decoration: none;">https://link.gale.com/apps/configuration.xml?product=PPTH&lms=canvas</a></td>
+                        <td><a href="https://link.gale.com/apps/launch" rel="external noopener" style="text-decoration: none;">https://link.gale.com/apps/launch</a></td>
+                        <td>action=create activity
+                            product=PPTH
+                            lms_name=moodle</td>
+                        <td>product=PPTH
+                            lms_name=d2l</td>
+                        <td>product=PPTH
+                            lms_name=blackboard</td>
+                        <td>product=PPTH
+                            lms_name=classlinklti</td>
+                    </tr>
+
+                    <tr>
+                        <th scope="row">35</th>
+                        <td>Gale OneFile: U.S. History</td>
+                        <td>PPUS</td>
+                        <td>Not currently available - request through Technical Support</td>
+                        <td><a href="https://link.gale.com/apps/configuration.xml?product=PPUS&lms=canvas" rel="external noopenner" style="text-decoration: none;">https://link.gale.com/apps/configuration.xml?product=PPUS&lms=canvas</a></td>
+                        <td><a href="https://link.gale.com/apps/launch" rel="external noopener" style="text-decoration: none;">https://link.gale.com/apps/launch</a></td>
+                        <td>action=create activity
+                            product=PPUS
+                            lms_name=moodle</td>
+                        <td>product=PPUS
+                            lms_name=d2l</td>
+                        <td>product=PPUS
+                            lms_name=blackboard</td>
+                        <td>product=PPUS
+                            lms_name=classlinklti</td>
+                    </tr>
+
+                    <tr>
+                        <th scope="row">36</th>
+                        <td>Gale OneFile: Vocations and Careers</td>
+                        <td>PPVC</td>
+                        <td>Not currently available - request through Technical Support</td>
+                        <td><a href="https://link.gale.com/apps/configuration.xml?product=PPVC&lms=canvas" rel="external noopenner" style="text-decoration: none;">https://link.gale.com/apps/configuration.xml?product=PPVC&lms=canvas</a></td>
+                        <td><a href="https://link.gale.com/apps/launch" rel="external noopener" style="text-decoration: none;">https://link.gale.com/apps/launch</a></td>
+                        <td>action=create activity
+                            product=PPVC
+                            lms_name=moodle</td>
+                        <td>product=PPVC
+                            lms_name=d2l</td>
+                        <td>product=PPVC
+                            lms_name=blackboard</td>
+                        <td>product=PPVC
+                            lms_name=classlinklti</td>
+                    </tr>
+
+                    <tr>
+                        <th scope="row">37</th>
+                        <td>Gale OneFile: World History</td>
+                        <td>PPWH</td>
+                        <td>Not currently available - request through Technical Support</td>
+                        <td><a href="https://link.gale.com/apps/configuration.xml?product=PPWH&lms=canvas" rel="external noopenner" style="text-decoration: none;">https://link.gale.com/apps/configuration.xml?product=PPWH&lms=canvas</a></td>
+                        <td><a href="https://link.gale.com/apps/launch" rel="external noopener" style="text-decoration: none;">https://link.gale.com/apps/launch</a></td>
+                        <td>action=create activity
+                            product=PPWH
+                            lms_name=moodle</td>
+                        <td>product=PPWH
+                            lms_name=d2l</td>
+                        <td>product=PPWH
+                            lms_name=blackboard</td>
+                        <td>product=PPWH
+                            lms_name=classlinklti</td>
+                    </tr>
+
+                    <tr>
+                        <th scope="row">38</th>
+                        <td>Gale OneFile: War and Terrorism</td>
+                        <td>PPWT</td>
+                        <td>Not currently available - request through Technical Support</td>
+                        <td><a href="https://link.gale.com/apps/configuration.xml?product=PPWT&lms=canvas" rel="external noopenner" style="text-decoration: none;">https://link.gale.com/apps/configuration.xml?product=PPWT&lms=canvas</a></td>
+                        <td><a href="https://link.gale.com/apps/launch" rel="external noopener" style="text-decoration: none;">https://link.gale.com/apps/launch</a></td>
+                        <td>action=create activity
+                            product=PPWT
+                            lms_name=moodle</td>
+                        <td>product=PPWT
+                            lms_name=d2l</td>
+                        <td>product=PPWT
+                            lms_name=blackboard</td>
+                        <td>product=PPWT
+                            lms_name=classlinklti</td>
+                    </tr>
+
+                    <tr>
+                        <th scope="row">39</th>
+                        <td>Gale OneFile: Educator's Reference Complete</td>
+                        <td>PROF</td>
+                        <td>Gale OneFile: Educator's Reference Complete</td>
+                        <td><a href="https://link.gale.com/apps/configuration.xml?product=PROF&lms=canvas" rel="external noopenner" style="text-decoration: none;">https://link.gale.com/apps/configuration.xml?product=PROF&lms=canvas</a></td>
+                        <td><a href="https://link.gale.com/apps/launch" rel="external noopener" style="text-decoration: none;">https://link.gale.com/apps/launch</a></td>
+                        <td>action=create activity
+                            product=PROF
+                            lms_name=moodle</td>
+                        <td>product=PROF
+                            lms_name=d2l</td>
+                        <td>product=PROF
+                            lms_name=blackboard</td>
+                        <td>product=PROF
+                            lms_name=classlinklti</td>
+                    </tr>
+
+                    <tr>
+                        <th scope="row">40</th>
+                        <td>Gale OneFile: News</td>
+                        <td>STND</td>
+                        <td>Gale OneFile: News</td>
+                        <td><a href="https://link.gale.com/apps/configuration.xml?product=STND&lms=canvas" rel="external noopenner" style="text-decoration: none;">https://link.gale.com/apps/configuration.xml?product=STND&lms=canvas</a></td>
+                        <td><a href="https://link.gale.com/apps/launch" rel="external noopener" style="text-decoration: none;">https://link.gale.com/apps/launch</a></td>
+                        <td>action=create activity
+                            product=STND
+                            lms_name=moodle</td>
+                        <td>product=STND
+                            lms_name=d2l</td>
+                        <td>product=STND
+                            lms_name=blackboard</td>
+                        <td>product=STND
+                            lms_name=classlinklti</td>
+                    </tr>
+
+                    <tr>
+                        <th scope="row">41</th>
+                        <td>Gale OneFile: High School Edition</td>
+                        <td>STOM</td>
+                        <td>Gale OneFile: High School Edition</td>
+                        <td><a href="https://link.gale.com/apps/configuration.xml?product=STOM&lms=canvas" rel="external noopenner" style="text-decoration: none;">https://link.gale.com/apps/configuration.xml?product=STOM&lms=canvas</a></td>
+                        <td><a href="https://link.gale.com/apps/launch" rel="external noopener" style="text-decoration: none;">https://link.gale.com/apps/launch</a></td>
+                        <td>action=create activity
+                            product=STOM
+                            lms_name=moodle</td>
+                        <td>product=STOM
+                            lms_name=d2l</td>
+                        <td>product=STOM
+                            lms_name=blackboard</td>
+                        <td>product=STOM
+                            lms_name=classlinklti</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="table-responsive-lg">
+            <table class="table table-striped table-bordered table-hover">
+                <caption>Gale In Context LTI certified databases.</caption>
+                <thead>
+                    <tr>
+                        <th scope="col">#</th>
+                        <th scope="col">Database Name:</th>
+                        <th scope="col">Database Code:</th>
+                        <th scope="col">Available in Schoology App Center</th>
+                        <th scope="col">config_URL (Canvas)</th>
+                        <th scope="col">launch_URL (use with custom parameters -->)</th>
+                        <th scope="col">custom_parameters (Moodle)</th>
+                        <th scope="col">custom_parameters (D2L Brightspace)</th>
+                        <th scope="col">custom_parameters (Blackboard)</th>
+                        <th scope="col">custom_parameters (ClassLink)</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <th scope="row">1</th>
+                        <td>Gale In Context: Elementary</td>
+                        <td>ITKE</td>
+                        <td>Gale In Context: Elementary</td>
+                        <td><a href="https://link.gale.com/apps/configuration.xml?product=ITKE&lms=canvas" rel="external noopenner" style="text-decoration: none;">https://link.gale.com/apps/configuration.xml?product=ITKE&lms=canvas</a></td>
+                        <td><a href="https://link.gale.com/apps/launch" rel="external noopener" style="text-decoration: none;">https://link.gale.com/apps/launch</a></td>
+                        <td>action=create activity
+                            product=ITKE
+                            lms_name=moodle</td>
+                        <td>product=ITKE
+                            lms_name=d2l</td>
+                        <td>product=ITKE
+                            lms_name=blackboard</td>
+                        <td>product=ITKE
+                            lms_name=classlinklti</td>
+                    </tr>
+
+                    <tr>
+                        <th scope="row">2</th>
+                        <td>Gale In Context: Literature</td>
+                        <td>LITIC</td>
+                        <td>Gale In Context: Literature</td>
+                        <td><a href="https://link.gale.com/apps/configuration.xml?product=LITIC&lms=canvas" rel="external noopenner" style="text-decoration: none;">https://link.gale.com/apps/configuration.xml?product=LITIC&lms=canvas</a></td>
+                        <td><a href="https://link.gale.com/apps/launch" rel="external noopener" style="text-decoration: none;">https://link.gale.com/apps/launch</a></td>
+                        <td>action=create activity
+                            product=LITIC
+                            lms_name=moodle</td>
+                        <td>product=LITIC
+                            lms_name=d2l</td>
+                        <td>product=LITIC
+                            lms_name=blackboard</td>
+                        <td>product=LITIC
+                            lms_name=classlinklti</td>
+                    </tr>
+
+                    <tr>
+                        <th scope="row">3</th>
+                        <td>Gale In Context: Middle School</td>
+                        <td>MSIC</td>
+                        <td>Gale In Context: Middle School</td>
+                        <td><a href="https://link.gale.com/apps/configuration.xml?product=MSIC&lms=canvas" rel="external noopenner" style="text-decoration: none;">https://link.gale.com/apps/configuration.xml?product=MSIC&lms=canvas</a></td>
+                        <td><a href="https://link.gale.com/apps/launch" rel="external noopener" style="text-decoration: none;">https://link.gale.com/apps/launch</a></td>
+                        <td>action=create activity
+                            product=MSIC
+                            lms_name=moodle</td>
+                        <td>product=MSIC
+                            lms_name=d2l</td>
+                        <td>product=MSIC
+                            lms_name=blackboard</td>
+                        <td>product=MSIC
+                            lms_name=classlinklti</td>
+                    </tr>
+
+                    <tr>
+                        <th scope="row">4</th>
+                        <td>Gale In Context: For Educators</td>
+                        <td>ICFE</td>
+                        <td>Gale In Context: For Educators</td>
+                        <td><a href="https://link.gale.com/apps/configuration.xml?product=ICFE&lms=canvas" rel="external noopenner" style="text-decoration: none;">https://link.gale.com/apps/configuration.xml?product=ICFE&lms=canvas</a></td>
+                        <td><a href="https://link.gale.com/apps/launch" rel="external noopener" style="text-decoration: none;">https://link.gale.com/apps/launch</a></td>
+                        <td>action=create activity
+                            product=ICFE
+                            lms_name=moodle</td>
+                        <td>product=ICFE
+                            lms_name=d2l</td>
+                        <td>product=ICFE
+                            lms_name=blackboard</td>
+                        <td>product=ICFE
+                            lms_name=classlinklti</td>
+                    </tr>
+
+                    <tr>
+                        <th scope="row">5</th>
+                        <td>Gale In Context: College</td>
+                        <td>CSIC</td>
+                        <td>Not currently available - request through Technical Support</td>
+                        <td><a href="https://link.gale.com/apps/configuration.xml?product=CSIC&lms=canvas" rel="external noopenner" style="text-decoration: none;">https://link.gale.com/apps/configuration.xml?product=CSIC&lms=canvas</a></td>
+                        <td><a href="https://link.gale.com/apps/launch" rel="external noopener" style="text-decoration: none;">https://link.gale.com/apps/launch</a></td>
+                        <td>action=create activity
+                            product=CSIC
+                            lms_name=moodle</td>
+                        <td>product=CSIC
+                            lms_name=d2l</td>
+                        <td>product=CSIC
+                            lms_name=blackboard</td>
+                        <td>product=CSIC
+                            lms_name=classlinklti</td>
+                    </tr>
+
+                    <tr>
+                        <th scope="row">6</th>
+                        <td>Gale In Context: Biography</td>
+                        <td>BIC</td>
+                        <td>Gale In Context: Biography</td>
+                        <td><a href="https://link.gale.com/apps/configuration.xml?product=BIC&lms=canvas" rel="external noopenner" style="text-decoration: none;">https://link.gale.com/apps/configuration.xml?product=BIC&lms=canvas</a></td>
+                        <td><a href="https://link.gale.com/apps/launch" rel="external noopener" style="text-decoration: none;">https://link.gale.com/apps/launch</a></td>
+                        <td>action=create activity
+                            product=BIC
+                            lms_name=moodle</td>
+                        <td>product=BIC
+                            lms_name=d2l</td>
+                        <td>product=BIC
+                            lms_name=blackboard</td>
+                        <td>product=BIC
+                            lms_name=classlinklti</td>
+                    </tr>
+
+                    <tr>
+                        <th scope="row">7</th>
+                        <td>Gale In Context: Canada</td>
+                        <td>CIC</td>
+                        <td>Not currently available - request through Technical Support</td>
+                        <td><a href="https://link.gale.com/apps/configuration.xml?product=CIC&lms=canvas" rel="external noopenner" style="text-decoration: none;">https://link.gale.com/apps/configuration.xml?product=CIC&lms=canvas</a></td>
+                        <td><a href="https://link.gale.com/apps/launch" rel="external noopener" style="text-decoration: none;">https://link.gale.com/apps/launch</a></td>
+                        <td>action=create activity
+                            product=CIC
+                            lms_name=moodle</td>
+                        <td>product=CIC
+                            lms_name=d2l</td>
+                        <td>product=CIC
+                            lms_name=blackboard</td>
+                        <td>product=CIC
+                            lms_name=classlinklti</td>
+                    </tr>
+
+                    <tr>
+                        <th scope="row">8</th>
+                        <td>Gale In Context: Environmental Studies</td>
+                        <td>GRNR</td>
+                        <td>Gale In Context: Environmental Studies</td>
+                        <td><a href="https://link.gale.com/apps/configuration.xml?product=GRNR&lms=canvas" rel="external noopenner" style="text-decoration: none;">https://link.gale.com/apps/configuration.xml?product=GRNR&lms=canvas</a></td>
+                        <td><a href="https://link.gale.com/apps/launch" rel="external noopener" style="text-decoration: none;">https://link.gale.com/apps/launch</a></td>
+                        <td>action=create activity
+                            product=GRNR
+                            lms_name=moodle</td>
+                        <td>product=GRNR
+                            lms_name=d2l</td>
+                        <td>product=GRNR
+                            lms_name=blackboard</td>
+                        <td>product=GRNR
+                            lms_name=classlinklti</td>
+                    </tr>
+
+                    <tr>
+                        <th scope="row">9</th>
+                        <td>Gale In Context: Global Issues</td>
+                        <td>GIC</td>
+                        <td>Gale In Context: Global Issues</td>
+                        <td><a href="https://link.gale.com/apps/configuration.xml?product=GIC&lms=canvas" rel="external noopenner" style="text-decoration: none;">https://link.gale.com/apps/configuration.xml?product=GIC&lms=canvas</a></td>
+                        <td><a href="https://link.gale.com/apps/launch" rel="external noopener" style="text-decoration: none;">https://link.gale.com/apps/launch</a></td>
+                        <td>action=create activity
+                            product=GIC
+                            lms_name=moodle</td>
+                        <td>product=GIC
+                            lms_name=d2l</td>
+                        <td>product=GIC
+                            lms_name=blackboard</td>
+                        <td>product=GIC
+                            lms_name=classlinklti</td>
+                    </tr>
+
+                    <tr>
+                        <th scope="row">10</th>
+                        <td>Gale In Context: Opposing Viewpoints</td>
+                        <td>OVIC</td>
+                        <td>Gale In Context: Opposing Viewpoints</td>
+                        <td><a href="https://link.gale.com/apps/configuration.xml?product=OVIC&lms=canvas" rel="external noopenner" style="text-decoration: none;">https://link.gale.com/apps/configuration.xml?product=OVIC&lms=canvas</a></td>
+                        <td><a href="https://link.gale.com/apps/launch" rel="external noopener" style="text-decoration: none;">https://link.gale.com/apps/launch</a></td>
+                        <td>action=create activity
+                            product=OVIC
+                            lms_name=moodle</td>
+                        <td>product=OVIC
+                            lms_name=d2l</td>
+                        <td>product=OVIC
+                            lms_name=blackboard</td>
+                        <td>product=OVIC
+                            lms_name=classlinklti</td>
+                    </tr>
+
+                    <tr>
+                        <th scope="row">11</th>
+                        <td>Gale In Context: Science</td>
+                        <td>SCIC</td>
+                        <td>Gale In Context: Science</td>
+                        <td><a href="https://link.gale.com/apps/configuration.xml?product=SCIC&lms=canvas" rel="external noopenner" style="text-decoration: none;">https://link.gale.com/apps/configuration.xml?product=SCIC&lms=canvas</a></td>
+                        <td><a href="https://link.gale.com/apps/launch" rel="external noopener" style="text-decoration: none;">https://link.gale.com/apps/launch</a></td>
+                        <td>action=create activity
+                            product=SCIC
+                            lms_name=moodle</td>
+                        <td>product=SCIC
+                            lms_name=d2l</td>
+                        <td>product=SCIC
+                            lms_name=blackboard</td>
+                        <td>product=SCIC
+                            lms_name=classlinklti</td>
+                    </tr>
+
+                    <tr>
+                        <th scope="row">12</th>
+                        <td>Gale In Context: High School</td>
+                        <td>SUIC</td>
+                        <td>Gale In Context: High School</td>
+                        <td><a href="https://link.gale.com/apps/configuration.xml?product=SUIC&lms=canvas" rel="external noopenner" style="text-decoration: none;">https://link.gale.com/apps/configuration.xml?product=SUIC&lms=canvas</a></td>
+                        <td><a href="https://link.gale.com/apps/launch" rel="external noopener" style="text-decoration: none;">https://link.gale.com/apps/launch</a></td>
+                        <td>action=create activity
+                            product=SUIC
+                            lms_name=moodle</td>
+                        <td>product=SUIC
+                            lms_name=d2l</td>
+                        <td>product=SUIC
+                            lms_name=blackboard</td>
+                        <td>product=SUIC
+                            lms_name=classlinklti</td>
+                    </tr>
+
+                    <tr>
+                        <th scope="row">13</th>
+                        <td>Gale In Context: U.S. History</td>
+                        <td>UHIC</td>
+                        <td>Gale In Context: U.S. History</td>
+                        <td><a href="https://link.gale.com/apps/configuration.xml?product=UHIC&lms=canvas" rel="external noopenner" style="text-decoration: none;">https://link.gale.com/apps/configuration.xml?product=UHIC&lms=canvas</a></td>
+                        <td><a href="https://link.gale.com/apps/launch" rel="external noopener" style="text-decoration: none;">https://link.gale.com/apps/launch</a></td>
+                        <td>action=create activity
+                            product=UHIC
+                            lms_name=moodle</td>
+                        <td>product=UHIC
+                            lms_name=d2l</td>
+                        <td>product=UHIC
+                            lms_name=blackboard</td>
+                        <td>product=UHIC
+                            lms_name=classlinklti</td>
+                    </tr>
+
+                    <tr>
+                        <th scope="row">14</th>
+                        <td>Gale In Context: World History</td>
+                        <td>WHIC</td>
+                        <td>Gale In Context: World History</td>
+                        <td><a href="https://link.gale.com/apps/configuration.xml?product=WHIC&lms=canvas" rel="external noopenner" style="text-decoration: none;">https://link.gale.com/apps/configuration.xml?product=WHIC&lms=canvas</a></td>
+                        <td><a href="https://link.gale.com/apps/launch" rel="external noopener" style="text-decoration: none;">https://link.gale.com/apps/launch</a></td>
+                        <td>action=create activity
+                            product=WHIC
+                            lms_name=moodle</td>
+                        <td>product=WHIC
+                            lms_name=d2l</td>
+                        <td>product=WHIC
+                            lms_name=blackboard</td>
+                        <td>product=WHIC
+                            lms_name=classlinklti</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+            <div class="table-responsive-lg">
+                <table class="table table-striped table-bordered table-hover">
+                    <caption>Gale Literature LTI certified databases.</caption>
+                    <thead>
+                        <tr>
+                            <th scope="col">#</th>
+                            <th scope="col">Database Name:</th>
+                            <th scope="col">Database Code:</th>
+                            <th scope="col">Available in Schoology App Center</th>
+                            <th scope="col">config_URL (Canvas)</th>
+                            <th scope="col">launch_URL (use with custom parameters -->)</th>
+                            <th scope="col">custom_parameters (Moodle)</th>
+                            <th scope="col">custom_parameters (D2L Brightspace)</th>
+                            <th scope="col">custom_parameters (Blackboard)</th>
+                            <th scope="col">custom_parameters (ClassLink)</th>
+                            
+                        </tr>
+                    </thead>
+    
+                    <tbody>
+                        <tr>
+                            <th scope="row">1</th>
+                            <td>Gale Literature: Book Review Index</td>
+                            <td>BRIP</td>
+                            <td>Not currently available - request through Technical Support</td>
+                            <td><a href="https://link.gale.com/apps/configuration.xml?product=BRIP&lms=canvas" rel="external noopenner" style="text-decoration: none;">https://link.gale.com/apps/configuration.xml?product=BRIP&lms=canvas</a></td>
+                            <td><a href="https://link.gale.com/apps/launch" rel="external noopener" style="text-decoration: none;">https://link.gale.com/apps/launch</a></td>
+                            <td>action=create activity
+                                product=BRIP
+                                lms_name=moodle</td>
+                            <td>product=BRIP
+                                lms_name=d2l</td>
+                            <td>product=BRIP
+                                lms_name=blackboard</td>
+                            <td>product=BRIP
+                                lms_name=classlinklti</td>
+                        </tr>
+
+                        <tr>
+                            <th scope="row">2</th>
+                            <td>Gale Literature: Contemporary Authors</td>
+                            <td>CA</td>
+                            <td>Not currently available - request through Technical Support</td>
+                            <td><a href="https://link.gale.com/apps/configuration.xml?product=CA&lms=canvas" rel="external noopenner" style="text-decoration: none;">https://link.gale.com/apps/configuration.xml?product=CA&lms=canvas</a></td>
+                            <td><a href="https://link.gale.com/apps/launch" rel="external noopener" style="text-decoration: none;">https://link.gale.com/apps/launch</a></td>
+                            <td>action=create activity
+                                product=CA
+                                lms_name=moodle</td>
+                            <td>product=CA
+                                lms_name=d2l</td>
+                            <td>product=CA
+                                lms_name=blackboard</td>
+                            <td>product=CA
+                                lms_name=classlinklti</td>
+                        </tr>
+
+                        <tr>
+                            <th scope="row">3</th>
+                            <td>Gale Literature: Dictionary of Literary Biography</td>
+                            <td>DLBC</td>
+                            <td>Not currently available - request through Technical Support</td>
+                            <td><a href="https://link.gale.com/apps/configuration.xml?product=DLBC&lms=canvas" rel="external noopenner" style="text-decoration: none;">https://link.gale.com/apps/configuration.xml?product=DLBC&lms=canvas</a></td>
+                            <td><a href="https://link.gale.com/apps/launch" rel="external noopener" style="text-decoration: none;">https://link.gale.com/apps/launch</a></td>
+                            <td>action=create activity
+                                product=DLBC
+                                lms_name=moodle</td>
+                            <td>product=DLBC
+                                lms_name=d2l</td>
+                            <td>product=DLBC
+                                lms_name=blackboard</td>
+                            <td>product=DLBC
+                                lms_name=classlinklti</td>
+                        </tr>
+
+                        <tr>
+                            <th scope="row">4</th>
+                            <td>Gale Literature (cross search)</td>
+                            <td>GLS</td>
+                            <td>Not currently available - request through Technical Support</td>
+                            <td><a href="https://link.gale.com/apps/configuration.xml?product=GLS&lms=canvas" rel="external noopenner" style="text-decoration: none;">https://link.gale.com/apps/configuration.xml?product=GLS&lms=canvas</a></td>
+                            <td><a href="https://link.gale.com/apps/launch" rel="external noopener" style="text-decoration: none;">https://link.gale.com/apps/launch</a></td>
+                            <td>action=create activity
+                                product=GLS
+                                lms_name=moodle</td>
+                            <td>product=GLS
+                                lms_name=d2l</td>
+                            <td>product=GLS
+                                lms_name=blackboard</td>
+                            <td>product=GLS
+                                lms_name=classlinklti</td>
+                        </tr>
+
+                        <tr>
+                            <th scope="row">5</th>
+                            <td>Gale Literature: Scribner Writer Series</td>
+                            <td>G-Scrib</td>
+                            <td>Not currently available - request through Technical Support</td>
+                            <td><a href="https://link.gale.com/apps/configuration.xml?product=G-Scrib&lms=canvas" rel="external noopenner" style="text-decoration: none;">https://link.gale.com/apps/configuration.xml?product=G-Scrib&lms=canvas</a></td>
+                            <td><a href="https://link.gale.com/apps/launch" rel="external noopener" style="text-decoration: none;">https://link.gale.com/apps/launch</a></td>
+                            <td>action=create activity
+                                product=G-Scrib
+                                lms_name=moodle</td>
+                            <td>product=G-Scrib
+                                lms_name=d2l</td>
+                            <td>product=G-Scrib
+                                lms_name=blackboard</td>
+                            <td>product=G-Scrib
+                                lms_name=classlinklti</td>
+                        </tr>
+
+                        <tr>
+                            <th scope="row">6</th>
+                            <td>Gale Literature: Twayne's Author Series</td>
+                            <td>G-Twayne</td>
+                            <td>Not currently available - request through Technical Support</td>
+                            <td><a href="https://link.gale.com/apps/configuration.xml?product=G-Twayne&lms=canvas" rel="external noopenner" style="text-decoration: none;">https://link.gale.com/apps/configuration.xml?product=G-Twayne&lms=canvas</a></td>
+                            <td><a href="https://link.gale.com/apps/launch" rel="external noopener" style="text-decoration: none;">https://link.gale.com/apps/launch</a></td>
+                            <td>action=create activity
+                                product=G-Twayne
+                                lms_name=moodle</td>
+                            <td>product=G-Twayne
+                                lms_name=d2l</td>
+                            <td>product=G-Twayne
+                                lms_name=blackboard</td>
+                            <td>product=G-Twayne
+                                lms_name=classlinklti</td>
+                        </tr>
+
+                        <tr>
+                            <th scope="row">7</th>
+                            <td>Gale Literature Criticism</td>
+                            <td>LCO</td>
+                            <td>Gale Literature Criticism</td>
+                            <td><a href="https://link.gale.com/apps/configuration.xml?product=LCO&lms=canvas" rel="external noopenner" style="text-decoration: none;">https://link.gale.com/apps/configuration.xml?product=LCO&lms=canvas</a></td>
+                            <td><a href="https://link.gale.com/apps/launch" rel="external noopener" style="text-decoration: none;">https://link.gale.com/apps/launch</a></td>
+                            <td>action=create activity
+                                product=LCO
+                                lms_name=moodle</td>
+                            <td>product=LCO
+                                lms_name=d2l</td>
+                            <td>product=LCO
+                                lms_name=blackboard</td>
+                            <td>product=LCO
+                                lms_name=classlinklti</td>
+                        </tr>
+
+                        <tr>
+                            <th scope="row">8</th>
+                            <td>Gale Literature: LitFinder</td>
+                            <td>LITF</td>
+                            <td>Gale Literature: LitFinder</td>
+                            <td><a href="https://link.gale.com/apps/configuration.xml?product=LITF&lms=canvas" rel="external noopenner" style="text-decoration: none;">https://link.gale.com/apps/configuration.xml?product=LITF&lms=canvas</a></td>
+                            <td><a href="https://link.gale.com/apps/launch" rel="external noopener" style="text-decoration: none;">https://link.gale.com/apps/launch</a></td>
+                            <td>action=create activity
+                                product=LITF
+                                lms_name=moodle</td>
+                            <td>product=LITF
+                                lms_name=d2l</td>
+                            <td>product=LITF
+                                lms_name=blackboard</td>
+                            <td>product=LITF
+                                lms_name=classlinklti</td>
+                        </tr>
+
+                        <tr>
+                            <th scope="row">9</th>
+                            <td>Gale Literature Resource Center</td>
+                            <td>LitRC</td>
+                            <td>Gale Literature Resource Center</td>
+                            <td><a href="https://link.gale.com/apps/configuration.xml?product=LitRC&lms=canvas" rel="external noopenner" style="text-decoration: none;">https://link.gale.com/apps/configuration.xml?product=LitRC&lms=canvas</a></td>
+                            <td><a href="https://link.gale.com/apps/launch" rel="external noopener" style="text-decoration: none;">https://link.gale.com/apps/launch</a></td>
+                            <td>action=create activity
+                                product=LitRC
+                                lms_name=moodle</td>
+                            <td>product=LitRC
+                                lms_name=d2l</td>
+                            <td>product=LitRC
+                                lms_name=blackboard</td>
+                            <td>product=LitRC
+                                lms_name=classlinklti</td>
+                        </tr>
+
+                        <tr>
+                            <th scope="row">10</th>
+                            <td>Gale Literature: Something About the Author</td>
+                            <td>SATA</td>
+                            <td>Not currently available - request through Technical Support</td>
+                            <td><a href="https://link.gale.com/apps/configuration.xml?product=SATA&lms=canvas" rel="external noopenner" style="text-decoration: none;">https://link.gale.com/apps/configuration.xml?product=SATA&lms=canvas</a></td>
+                            <td><a href="https://link.gale.com/apps/launch" rel="external noopener" style="text-decoration: none;">https://link.gale.com/apps/launch</a></td>
+                            <td>action=create activity
+                                product=SATA
+                                lms_name=moodle</td>
+                            <td>product=SATA
+                                lms_name=d2l</td>
+                            <td>product=SATA
+                                lms_name=blackboard</td>
+                            <td>product=SATA
+                                lms_name=classlinklti</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="table-responsive-lg">
+                <table class="table table-striped table-bordered table-hover">
+                    <caption>Gale Primary Source LTI certified databases.</caption>
+                    <thead>
+                        <tr>
+                            <th scope="col">#</th>
+                            <th scope="col">Database Name:</th>
+                            <th scope="col">Database Code:</th>
+                            <th scope="col">Available in Schoology App Center</th>
+                            <th scope="col">config_URL (Canvas)</th>
+                            <th scope="col">launch_URL (use with custom parameters -->)</th>
+                            <th scope="col">custom_parameters (Moodle)</th>
+                            <th scope="col">custom_parameters (D2L Brightspace)</th>
+                            <th scope="col">custom_parameters (Blackboard)</th>
+                            <th scope="col">custom_parameters (ClassLink)</th>
+                        </tr>
+                    </thead>
+    
+                    <tbody>
+                        <tr>
+                            <th scope="row">1</th>
+                            <td>Gale Primary Sources</td>
+                            <td>GDCS</td>
+                            <td>Not currently available - request through Technical Support</td>
+                            <td><a href="https://link.gale.com/apps/configuration.xml?product=GDCS&lms=canvas" rel="external noopenner" style="text-decoration: none;">https://link.gale.com/apps/configuration.xml?product=GDCS&lms=canvas</a></td>
+                            <td><a href="https://link.gale.com/apps/launch" rel="external noopener" style="text-decoration: none;">https://link.gale.com/apps/launch</a></td>
+                            <td>action=create activity
+                                product=GDCS
+                                lms_name=moodle</td>
+                            <td>product=GDCS
+                                lms_name=d2l</td>
+                            <td>product=GDCS
+                                lms_name=blackboard</td>
+                            <td>product=GDCS
+                                lms_name=classlinklti</td>
+                        </tr>
+
+                        <tr>
+                            <th scope="row">2</th>
+                            <td>Smithsonian Primary Sources in U.S. History</td>
+                            <td>SMPS</td>
+                            <td>Smithsonian Primary Sources in U.S. History</td>
+                            <td><a href="https://link.gale.com/apps/configuration.xml?product=SMPS&lms=canvas" rel="external noopenner" style="text-decoration: none;">https://link.gale.com/apps/configuration.xml?product=SMPS&lms=canvas</a></td>
+                            <td><a href="https://link.gale.com/apps/launch" rel="external noopener" style="text-decoration: none;">https://link.gale.com/apps/launch</a></td>
+                            <td>action=create activity
+                                product=SMPS
+                                lms_name=moodle</td>
+                            <td>product=SMPS
+                                lms_name=d2l</td>
+                            <td>product=SMPS
+                                lms_name=blackboard</td>
+                            <td>product=SMPS
+                                lms_name=classlinklti</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="table-responsive-lg">
+                <table class="table table-striped table-bordered table-hover">
+                    <caption>Additional LTI certified databases.</caption>
+                    <thead>
+                        <tr>
+                            <th scope="col">#</th>
+                            <th scope="col">Database Name:</th>
+                            <th scope="col">Database Code:</th>
+                            <th scope="col">Available in Schoology App Center</th>
+                            <th scope="col">config_URL (Canvas)</th>
+                            <th scope="col">launch_URL (use with custom parameters -->)</th>
+                            <th scope="col">custom_parameters (Moodle)</th>
+                            <th scope="col">custom_parameters (D2L Brightspace)</th>
+                            <th scope="col">custom_parameters (Blackboard)</th>
+                            <th scope="col">custom_parameters (ClassLink)</th>
+                        </tr>
+                    </thead>
+    
+                    <tbody>
+                        <tr>
+                            <th scope="row">1</th>
+                            <td>Gale Genealogy Connect</td>
+                            <td>GENVRL</td>
+                            <td>Not currently available - request through Technical Support</td>
+                            <td><a href="https://link.gale.com/apps/configuration.xml?product=GENVRL&lms=canvas" rel="external noopenner" style="text-decoration: none;">https://link.gale.com/apps/configuration.xml?product=GENVRL&lms=canvas</a></td>
+                            <td><a href="https://link.gale.com/apps/launch" rel="external noopener" style="text-decoration: none;">https://link.gale.com/apps/launch</a></td>
+                            <td>action=create activity
+                                product=GENVRL
+                                lms_name=moodle</td>
+                            <td>product=GENVRL
+                                lms_name=d2l</td>
+                            <td>product=GENVRL
+                                lms_name=blackboard</td>
+                            <td>product=GENVRL
+                                lms_name=classlinklti</td>
+                        </tr>
+
+                        <tr>
+                            <th scope="row">2</th>
+                            <td>Gale eBooks</td>
+                            <td>GVRL</td>
+                            <td>Gale eBooks</td>
+                            <td><a href="https://link.gale.com/apps/configuration.xml?product=GVRL&lms=canvas" rel="external noopenner" style="text-decoration: none;">https://link.gale.com/apps/configuration.xml?product=GVRL&lms=canvas</a></td>
+                            <td><a href="https://link.gale.com/apps/launch" rel="external noopener" style="text-decoration: none;">https://link.gale.com/apps/launch</a></td>
+                            <td>action=create activity
+                                product=GVRL
+                                lms_name=moodle</td>
+                            <td>product=GVRL
+                                lms_name=d2l</td>
+                            <td>product=GVRL
+                                lms_name=blackboard</td>
+                            <td>product=GVRL
+                                lms_name=classlinklti</td>
+                        </tr>
+
+                        <tr>
+                            <th scope="row">3</th>
+                            <td>Gale Health and Wellness</td>
+                            <td>HWRC</td>
+                            <td>Gale Health and Wellness</td>
+                            <td><a href="https://link.gale.com/apps/configuration.xml?product=HWRC&lms=canvas" rel="external noopenner" style="text-decoration: none;">https://link.gale.com/apps/configuration.xml?product=HWRC&lms=canvas</a></td>
+                            <td><a href="https://link.gale.com/apps/launch" rel="external noopener" style="text-decoration: none;">https://link.gale.com/apps/launch</a></td>
+                            <td>action=create activity
+                                product=HWRC
+                                lms_name=moodle</td>
+                            <td>product=HWRC
+                                lms_name=d2l</td>
+                            <td>product=HWRC
+                                lms_name=blackboard</td>
+                            <td>product=HWRC
+                                lms_name=classlinklti</td>
+                        </tr>
+
+                        <tr>
+                            <th scope="row">4</th>
+                            <td>Gale Business: Entrepreneurship</td>
+                            <td>SBRC</td>
+                            <td>Gale Business: Entrepreneurship</td>
+                            <td><a href="https://link.gale.com/apps/configuration.xml?product=SBRC&lms=canvas" rel="external noopenner" style="text-decoration: none;">https://link.gale.com/apps/configuration.xml?product=SBRC&lms=canvas</a></td>
+                            <td><a href="https://link.gale.com/apps/launch" rel="external noopener" style="text-decoration: none;">https://link.gale.com/apps/launch</a></td>
+                            <td>action=create activity
+                                product=SBRC
+                                lms_name=moodle</td>
+                            <td>product=SBRC
+                                lms_name=d2l</td>
+                            <td>product=SBRC
+                                lms_name=blackboard</td>
+                            <td>product=SBRC
+                                lms_name=classlinklti</td>
+                        </tr>
+
+                        <tr>
+                            <th scope="row">5</th>
+                            <td>National Geographic Kids</td>
+                            <td>NGMK</td>
+                            <td>National Geographic Kids</td>
+                            <td><a href="https://link.gale.com/apps/configuration.xml?product=NGMK&lms=canvas" rel="external noopenner" style="text-decoration: none;">https://link.gale.com/apps/configuration.xml?product=NGMK&lms=canvas</a></td>
+                            <td><a href="https://link.gale.com/apps/launch" rel="external noopener" style="text-decoration: none;">https://link.gale.com/apps/launch</a></td>
+                            <td>action=create activity
+                                product=NGMK
+                                lms_name=moodle</td>
+                            <td>product=NGMK
+                                lms_name=d2l</td>
+                            <td>product=NGMK
+                                lms_name=blackboard</td>
+                            <td>product=NGMK
+                                lms_name=classlinklti</td>
+                        </tr>
+
+                        <tr>
+                            <th scope="row">6</th>
+                            <td>National Geographic Virtual Library</td>
+                            <td>NGMA</td>
+                            <td>Not currently available - request through Technical Support</td>
+                            <td><a href="https://link.gale.com/apps/configuration.xml?product=NGMA&lms=canvas" rel="external noopenner" style="text-decoration: none;">https://link.gale.com/apps/configuration.xml?product=NGMA&lms=canvas</a></td>
+                            <td><a href="https://link.gale.com/apps/launch" rel="external noopener" style="text-decoration: none;">https://link.gale.com/apps/launch</a></td>
+                            <td>action=create activity
+                                product=NGMA
+                                lms_name=moodle</td>
+                            <td>product=NGMA
+                                lms_name=d2l</td>
+                            <td>product=NGMA
+                                lms_name=blackboard</td>
+                            <td>product=NGMA
+                                lms_name=classlinklti</td>
+                        </tr>
+
+                        <tr>
+                            <th scope="row">7</th>
+                            <td>Gale Case Studies</td>
+                            <td>GCSS</td>
+                            <td>Not currently available - request through Technical Support</td>
+                            <td><a href="https://link.gale.com/apps/configuration.xml?product=GCSS&lms=canvas" rel="external noopenner" style="text-decoration: none;">https://link.gale.com/apps/configuration.xml?product=GCSS&lms=canvas</a></td>
+                            <td><a href="https://link.gale.com/apps/launch" rel="external noopener" style="text-decoration: none;">https://link.gale.com/apps/launch</a></td>
+                            <td>action=create activity
+                                product=GCSS
+                                lms_name=moodle</td>
+                            <td>product=GCSS
+                                lms_name=d2l</td>
+                            <td>product=GCSS
+                                lms_name=blackboard</td>
+                            <td>product=GCSS
+                                lms_name=classlinklti</td>
+                        </tr>
+
+                        <tr>
+                            <th scope="row">8</th>
+                            <td>Gale Interactive: Human Anatomy*</td>
+                            <td>IANAT</td>
+                            <td>Not currently available - request through Technical Support</td>
+                            <td><a href="https://link.gale.com/apps/configuration.xml?product=IANAT&lms=canvas" rel="external noopenner" style="text-decoration: none;">https://link.gale.com/apps/configuration.xml?product=IANAT&lms=canvas</a></td>
+                            <td><a href="https://link.gale.com/apps/launch" rel="external noopener" style="text-decoration: none;">https://link.gale.com/apps/launch</a></td>
+                            <td>action=create activity
+                                product=IANAT
+                                lms_name=moodle</td>
+                            <td>product=IANAT
+                                lms_name=d2l</td>
+                            <td>product=IANAT
+                                lms_name=blackboard</td>
+                            <td>product=IANAT
+                                lms_name=classlinklti</td>
+                        </tr>
+
+                        <tr>
+                            <th scope="row">9</th>
+                            <td>Gale Interactive: Chemistry*</td>
+                            <td>ICHEM</td>
+                            <td>Not currently available - request through Technical Support</td>
+                            <td><a href="https://link.gale.com/apps/configuration.xml?product=ICHEM&lms=canvas" rel="external noopenner" style="text-decoration: none;">https://link.gale.com/apps/configuration.xml?product=ICHEM&lms=canvas</a></td>
+                            <td><a href="https://link.gale.com/apps/launch" rel="external noopener" style="text-decoration: none;">https://link.gale.com/apps/launch</a></td>
+                            <td>action=create activity
+                                product=ICHEM
+                                lms_name=moodle</td>
+                            <td>product=ICHEM
+                                lms_name=d2l</td>
+                            <td>product=ICHEM
+                                lms_name=blackboard</td>
+                            <td>product=ICHEM
+                                lms_name=classlinklti</td>
+                        </tr>
+
+                        <tr>
+                            <th scope="row">10</th>
+                            <td>Gale Interactive: Science</td>
+                            <td>ISSCI</td>
+                            <td>Gale Interactive: Science</td>
+                            <td><a href="https://link.gale.com/apps/configuration.xml?product=ISSCI&lms=canvas" rel="external noopenner" style="text-decoration: none;">https://link.gale.com/apps/configuration.xml?product=ISSCI&lms=canvas</a></td>
+                            <td><a href="https://link.gale.com/apps/launch" rel="external noopener" style="text-decoration: none;">https://link.gale.com/apps/launch</a></td>
+                            <td>action=create activity
+                                product=ISSCI
+                                lms_name=moodle</td>
+                            <td>product=ISSCI
+                                lms_name=d2l</td>
+                            <td>product=ISSCI
+                                lms_name=blackboard</td>
+                            <td>product=ISSCI
+                                lms_name=classlinklti</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        <div class="alert alert-primary text-black align-items-center" role="alert">
+                <i class="bi bi-info-circle-fill"></i> &nbsp; &ast;LTI functionality limited to launching in LMS. Users will need to use the Link function within product to add to Assignments, etc.
+        </div>
+
     </body>
-
-
-## Image tags to use
-< img src="https://assets.gale.com/docs/technical/technical_doc_images/Directory/insertfilenamehere.png" aria-label="insert text the same as alt here" class="img-fluid" role="img" style="border: 2px solid black">
+</html>
